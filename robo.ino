@@ -67,6 +67,17 @@ void loop(){
               do{
                   comando = currentString.substring(0, index_prox_virgula);
                   Serial.println(comando);
+
+                  if (comando == "direita"){
+                    //chamar direita
+                  }else if (comando == "esquerda"){
+                    //chamar esquerda
+                  }else if (comando == "cima"){
+                    //chamar cima
+                  }else if (comando == "abaixo"){
+                    //char abaixo
+                  }
+                  
                   fim = currentString.length();
                   currentString = currentString.substring(index_prox_virgula+1, fim);
                   //Serial.println(currentString);
